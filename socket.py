@@ -1,7 +1,7 @@
 import socket
 
-SRV_ADDR = raw_input("Type the server IP address: ")
-SRV_PORT = int(raw_input("Type the server port: "))
+SRV_ADDR = input("Type the server IP address: ")
+SRV_PORT = int(input("Type the server port: "))
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((SRV_ADDR,SRV_PORT))
